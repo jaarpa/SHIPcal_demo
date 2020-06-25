@@ -81,3 +81,10 @@ Once you have added a location, fuels, and collectors, you are ready to simulate
 Go to Simulate in the navigation menu and fill up the form with the data for the simulation and click the simulate button. In a few seconds you would be redirected to the results.
 
 ## TODO
+- [ ] Functionality to add new collectors
+- [ ] Translations
+- [ ] Update/Delete fuels view
+- [ ] Update/Delete locations view
+- [ ] Update/Delete simulation view
+- [ ] Results view to get previous simulation results.
+- [ ] PDF generation report
