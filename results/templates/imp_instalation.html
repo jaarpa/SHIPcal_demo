@@ -13,7 +13,7 @@
 				<h2> {% trans "Results" %}: </h2> <h4>{% trans "Simulation" %} # {{s.simulation.id}} - {{s.simulation.industry}}</h4>
 			</div>
 			<div align="right" class="col-md-6">
-				<button class="btn btn-success" type="button" href="{% url 'simulate' %}"> {% trans "Go to simulate" %}</button>
+				<a class="btn btn-success" href="{% url 'simulate' %}"> {% trans "Go to simulate" %}</a>
 			</div>
 	</div>
 </div>
