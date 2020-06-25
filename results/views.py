@@ -8,6 +8,13 @@ from SHIPcal.Plot_modules.plottingSHIPcal import SankeyPlot,prodWinterPlot,prodS
 from SHIPcal.Plot_modules.plottingSHIPcal import mollierPlotST,mollierPlotSH,rhoTempPlotOil,viscTempPlotOil,rhoTempPlotSalt,viscTempPlotSalt #noqa
 
 # Create your views here.
+
+def all_results(request):
+    every_simulation = SimResults.objects.all()
+    
+    return render(request, 'results.html', {'simulations':every_simulation})
+
+
 def result(request, sim_id):
     sim_results = SimResults.objects.get(simulation=sim_id)
 

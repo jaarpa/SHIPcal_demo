@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from simforms.views import new_simulation, load_city, new_fuel, update_fuel
 from simforms.views import async_locations, async_fueltab, async_co2factorunit, async_sim_fu, async_integrations
-from results.views import result, result_instalation, result_production, result_finance
+from results.views import all_results, result, result_instalation, result_production, result_finance
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,10 +28,11 @@ urlpatterns = [
     path('new_collector/', load_city, name='new_collector'), #Not implemented
     
     #results
-    path('results/<int:sim_id>', result, name="results"),
-    path('results/instalation/<int:sim_id>', result_instalation, name="results_instalation"),
-    path('results/production/<int:sim_id>', result_production, name="results_production"),
-    path('results/finance/<int:sim_id>', result_finance, name="results_financial"),
+    path('results/', all_results, name="all_results"),
+    path('result/<int:sim_id>', result, name="results"),
+    path('result/instalation/<int:sim_id>', result_instalation, name="results_instalation"),
+    path('result/production/<int:sim_id>', result_production, name="results_production"),
+    path('result/finance/<int:sim_id>', result_finance, name="results_financial"),
     
     #Async urls
     path('ajax/locations', async_locations, name='async_locations'),
