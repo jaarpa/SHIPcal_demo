@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-25 11:02-0500\n"
+"POT-Creation-Date: 2020-06-25 17:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: demo_SHIPcal/settings.py:112
+#: demo_SHIPcal/settings.py:113
 msgid "Spanish"
 msgstr "Español"
 
-#: demo_SHIPcal/settings.py:113
+#: demo_SHIPcal/settings.py:114
 msgid "English"
 msgstr "Inglés"
 
@@ -372,6 +372,7 @@ msgstr "Resultados"
 
 #: results/templates/imp.html:11 results/templates/imp_finance.html:10
 #: results/templates/imp_instalation.html:13 results/templates/imp_prod.html:10
+#: results/templates/results.html:16
 msgid "Simulation"
 msgstr "Simulación"
 
@@ -474,8 +475,8 @@ msgid ""
 "Costs breakdown of the solar plat. The costs are an aproximation and may not "
 "be updated."
 msgstr ""
-"Desglose de costos de la planta solar. Los costos son aproximados y pueden no"
-"estar actualizados"
+"Desglose de costos de la planta solar. Los costos son aproximados y pueden "
+"noestar actualizados"
 
 #: results/templates/imp_finance.html:68
 msgid "Collectors"
@@ -539,11 +540,12 @@ msgid ""
 "°C</b>. The number of loops depends on the total energy demand of the "
 "industry.</p>"
 msgstr ""
-"<p>La instalación solar está formada por un número determinado de colectores, agrupados en filas. "
-"En las filas los colectores se unen en serie. Las series se conectan en paralelo. "
-"El número de colectores por fila se ha diseñado para que en una fila se alcance el salto de "
-"temperatura de diseño de <b>%(Ti)s °C</b> a <b>%(To)s °C</b>. "
-"El número de filas depende de la demanda de energía de la industria.</p>"
+"<p>La instalación solar está formada por un número determinado de "
+"colectores, agrupados en filas. En las filas los colectores se unen en "
+"serie. Las series se conectan en paralelo. El número de colectores por fila "
+"se ha diseñado para que en una fila se alcance el salto de temperatura de "
+"diseño de <b>%(Ti)s °C</b> a <b>%(To)s °C</b>. El número de filas depende de "
+"la demanda de energía de la industria.</p>"
 
 #: results/templates/imp_instalation.html:60
 msgid "Collector"
@@ -627,7 +629,8 @@ msgstr "Desenfocada"
 
 #: results/templates/imp_prod.html:80
 msgid "Solar energy that cannot be stored nor supplied in one year"
-msgstr "Energía solar que no puede ser ni almacenada ni administrada durante un año"
+msgstr ""
+"Energía solar que no puede ser ni almacenada ni administrada durante un año"
 
 #: results/templates/imp_prod.html:88
 msgid "Energy utilization"
@@ -647,7 +650,7 @@ msgstr "Detalle de la producción durante invierno y verano"
 
 #: results/templates/imp_prod.html:130
 msgid "Thermal fluid temperatures during the process"
-msgstr ""
+msgstr "Temperaturas del fluido durante el proceso"
 
 #: results/templates/imp_prod.html:132
 #, python-format
@@ -656,203 +659,205 @@ msgid ""
 "solar inlet the fluid enters at %(Ti)sºC. The solar field heats the fluid up "
 "to %(To)sºC, corresponding to the outlet temperature towards the boiler. </p>"
 msgstr ""
+"<p>Todo el circuito está en fáse líquida, no existe evaporación. A la "
+"entrada del sistema solar entra fluido líquido a %(Ti)sºC. El campo solar "
+"calienta el fluido hasta una temperatura de %(To)sºC, correspondiente a la "
+"temperatura de salida de la caldera. Dado que la temperatura de salida del "
+"campo solar es la misma que la salida de caldera, el campo solar se puede "
+"conectar directamente a la red de distribución de la fábrica</p>"
 
 #: results/templates/results.html:5
 msgid "My simulations"
-msgstr ""
+msgstr "Mis simulaciones"
 
 #: results/templates/results.html:9
 msgid "Simulations results"
-msgstr ""
+msgstr "Resultados de simulaciones"
 
 #: results/templates/results.html:15
 msgid "id"
-msgstr ""
-
-#: results/templates/results.html:16
-msgid "Simultion"
-msgstr ""
+msgstr "id"
 
 #: results/templates/results.html:17 simforms/models.py:18
 msgid "Date"
-msgstr ""
+msgstr "Fecha"
 
 #: results/templates/results.html:18
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: results/templates/results.html:28
 msgid "Go to the results"
-msgstr ""
+msgstr "Ir a resultados"
 
 #: simforms/forms.py:89
 msgid "The file contains a headers"
-msgstr ""
+msgstr "El archivo contiene encabezados"
 
 #: simforms/forms.py:90
 msgid "Metorologic file to load"
-msgstr ""
+msgstr "Archivo meteorológico para subir"
 
 #: simforms/models.py:11
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: simforms/models.py:14
 msgid "Industry"
-msgstr ""
+msgstr "Industria"
 
 #: simforms/models.py:15
 msgid "Industry sector"
-msgstr ""
+msgstr "Sector industrial"
 
 #: simforms/models.py:16
 msgid "Process description"
-msgstr ""
+msgstr "Descripción de proceso"
 
 #: simforms/models.py:21
 msgid "The CO2 price cannot be less than 0"
-msgstr ""
+msgstr "El precio del CO2 no puede ser menor que 0"
 
 #: simforms/models.py:22
 msgid "Business model"
-msgstr ""
+msgstr "Modelo de negocio"
 
 #: simforms/models.py:22
 msgid "Turnkey project"
-msgstr ""
+msgstr "Llave en mano"
 
 #: simforms/models.py:23
 msgid "The fuel price cannot be less than 0"
-msgstr ""
+msgstr "El costo del combustible no puede ser menor a 0"
 
 #: simforms/models.py:25 simforms/models.py:128
 #: simforms/templates/simulation_form.html:45
 msgid "Country"
-msgstr ""
+msgstr "País"
 
 #: simforms/models.py:28
 msgid "Available surface"
-msgstr ""
+msgstr "Superficie disponible"
 
 #: simforms/models.py:28
 msgid "The available surface cannot be less than 0"
-msgstr ""
+msgstr "La superficie disponible no puede ser menor a 0"
 
 #: simforms/models.py:29
 msgid "Distance to process"
-msgstr ""
+msgstr "Distancia al proceso"
 
 #: simforms/models.py:29
 msgid "The distance cannot be less than 0"
-msgstr ""
+msgstr "La distancia no puede ser menor que 0"
 
 #: simforms/models.py:31
 msgid "Fluid"
-msgstr ""
+msgstr "Fluido"
 
 #: simforms/models.py:31
 msgid "Water"
-msgstr ""
+msgstr "Agua"
 
 #: simforms/models.py:31
 msgid "Steam"
-msgstr ""
+msgstr "Vapor"
 
 #: simforms/models.py:31
 msgid "Thermal oil"
-msgstr ""
+msgstr "Acéite térmico"
 
 #: simforms/models.py:31
 msgid "Molten salts"
-msgstr ""
+msgstr "Sales fundidas"
 
 #: simforms/models.py:32
 msgid "Outlet temperature"
-msgstr ""
+msgstr "Temperatura de salida"
 
 #: simforms/models.py:33
 msgid "Inlet temperature"
-msgstr ""
+msgstr "Temperatura de entrada"
 
 #: simforms/models.py:34
 msgid "Connection type"
-msgstr ""
+msgstr "Tipo de conección"
 
 #: simforms/models.py:34
 msgid "Direct to process"
-msgstr ""
+msgstr "Directo a proceso"
 
 #: simforms/models.py:34
 msgid "With intermediate deposit"
-msgstr ""
+msgstr "Con depósito intermedio"
 
 #: simforms/models.py:39
 msgid "Pressure unit"
-msgstr ""
+msgstr "Unidades de presión"
 
 #: simforms/models.py:40
 msgid "Pressure"
-msgstr ""
+msgstr "Presión"
 
 #: simforms/models.py:43
 msgid "Annual energy demand"
-msgstr ""
+msgstr "Demanda anual de energía"
 
 #: simforms/models.py:43
 msgid "The demand cannot be less or equal to 0"
-msgstr ""
+msgstr "La demanda no puede ser menor o igual a 0"
 
 #: simforms/models.py:44
 msgid "Demand unit"
-msgstr ""
+msgstr "Unidades de demanda"
 
 #: simforms/models.py:44
 msgid "kWh/year"
-msgstr ""
+msgstr "kWh/año"
 
 #: simforms/models.py:44
 msgid "MWh/year"
-msgstr ""
+msgstr "MWh/año"
 
 #: simforms/models.py:44
 msgid "KJ/year"
-msgstr ""
+msgstr "KJ/año"
 
 #: simforms/models.py:44
 msgid "BTU/year"
-msgstr ""
+msgstr "BTU/año"
 
 #: simforms/models.py:44
 msgid "kcal/year"
-msgstr ""
+msgstr "kcal/year"
 
 #: simforms/models.py:48
 msgid "Ending time"
-msgstr ""
+msgstr "Hora de término"
 
 #: simforms/models.py:48
 msgid "The ending time cannot be less than 1"
-msgstr ""
+msgstr "La hora de término no puede ser menor que 1"
 
 #: simforms/models.py:48
 msgid "The ending time cannot be greater than 24"
-msgstr ""
+msgstr "La hora de término no puede ser mayor que 24"
 
 #: simforms/models.py:49
 msgid "Starting time"
-msgstr ""
+msgstr "Hora de inicio"
 
 #: simforms/models.py:49
 msgid "The starting time cannot be less than 0"
-msgstr ""
+msgstr "La hora de inicio no puede ser menor que 0"
 
 #: simforms/models.py:49
 msgid "The starting time cannot be greater than 23"
-msgstr ""
+msgstr "La hora de inicio no puede ser mayor que 23"
 
 #: simforms/models.py:51
 msgid "Jan"
-msgstr ""
+msgstr "Ene"
 
 #: simforms/models.py:51 simforms/models.py:52 simforms/models.py:53
 #: simforms/models.py:54 simforms/models.py:55 simforms/models.py:56
@@ -863,7 +868,7 @@ msgstr ""
 #: simforms/models.py:70 simforms/models.py:94 simforms/models.py:95
 #: simforms/models.py:97
 msgid "This cannot be less than 0"
-msgstr ""
+msgstr "Esto no puede ser menor que 0"
 
 #: simforms/models.py:51 simforms/models.py:52 simforms/models.py:53
 #: simforms/models.py:54 simforms/models.py:55 simforms/models.py:56
@@ -873,273 +878,273 @@ msgstr ""
 #: simforms/models.py:67 simforms/models.py:68 simforms/models.py:69
 #: simforms/models.py:70
 msgid "This cannot be greater than 1"
-msgstr ""
+msgstr "ESto no puede ser mayor que 1"
 
 #: simforms/models.py:52
 msgid "Feb"
-msgstr ""
+msgstr "Feb"
 
 #: simforms/models.py:53
 msgid "Mar"
-msgstr ""
+msgstr "Mar"
 
 #: simforms/models.py:54
 msgid "Apr"
-msgstr ""
+msgstr "Abr"
 
 #: simforms/models.py:55
 msgid "May"
-msgstr ""
+msgstr "May"
 
 #: simforms/models.py:56
 msgid "Jun"
-msgstr ""
+msgstr "Jun"
 
 #: simforms/models.py:57
 msgid "Jul"
-msgstr ""
+msgstr "Jul"
 
 #: simforms/models.py:58
 msgid "Aug"
-msgstr ""
+msgstr "Ago"
 
 #: simforms/models.py:59
 msgid "Sep"
-msgstr ""
+msgstr "Sep"
 
 #: simforms/models.py:60
 msgid "Oct"
-msgstr ""
+msgstr "Oct"
 
 #: simforms/models.py:61
 msgid "Nov"
-msgstr ""
+msgstr "Nov"
 
 #: simforms/models.py:62
 msgid "Dec"
-msgstr ""
+msgstr "Dic"
 
 #: simforms/models.py:64
 msgid "Mon"
-msgstr ""
+msgstr "Lun"
 
 #: simforms/models.py:65
 msgid "Tue"
-msgstr ""
+msgstr "Mar"
 
 #: simforms/models.py:66
 msgid "Wed"
-msgstr ""
+msgstr "Mie"
 
 #: simforms/models.py:67
 msgid "Thu"
-msgstr ""
+msgstr "Jue"
 
 #: simforms/models.py:68
 msgid "Fri"
-msgstr ""
+msgstr "Vie"
 
 #: simforms/models.py:69
 msgid "Sat"
-msgstr ""
+msgstr "Sáb"
 
 #: simforms/models.py:70
 msgid "Sun"
-msgstr ""
+msgstr "Dom"
 
 #: simforms/models.py:73
 msgid "Terrain type"
-msgstr ""
+msgstr "Tipo de terreno"
 
 #: simforms/models.py:73
 msgid "Clean ground"
-msgstr ""
+msgstr "Terreno limpio"
 
 #: simforms/models.py:74
 msgid "Orientation"
-msgstr ""
+msgstr "Orientación"
 
 #: simforms/models.py:74
 msgid "North-South"
-msgstr ""
+msgstr "Norte-Sur"
 
 #: simforms/models.py:75
 msgid "Inclination"
-msgstr ""
+msgstr "Inclinación"
 
 #: simforms/models.py:75
 msgid "Flat"
-msgstr ""
+msgstr "Plano"
 
 #: simforms/models.py:76
 msgid "Shadows"
-msgstr ""
+msgstr "Sombras"
 
 #: simforms/models.py:76
 msgid "Shadows free"
-msgstr ""
+msgstr "Libre de sombras"
 
 #: simforms/models.py:97
 msgid "Thermal storage capacity"
-msgstr ""
+msgstr "Capacidad de almacenamiento térmico"
 
 #: simforms/models.py:100
 msgid "Solar radiation modificator"
-msgstr ""
+msgstr "Modificador de radiación solar"
 
 #: simforms/models.py:104 simforms/models.py:109
 #: simforms/templates/simulation_form.html:98
 msgid "Fuel"
-msgstr ""
+msgstr "Combustible"
 
 #: simforms/models.py:105
 msgid "CO2 Ton per"
-msgstr ""
+msgstr "CO2 Ton por"
 
 #: simforms/models.py:110
 msgid "Fuels"
-msgstr ""
+msgstr "Combustibles"
 
 #: simforms/models.py:117 simforms/models.py:118
 #: simforms/templates/async/table_fuelunits.html:6
 #: simforms/templates/new_fuel.html:101
 msgid "Conversion factor"
-msgstr ""
+msgstr "Factor de conversión"
 
 #: simforms/models.py:121
 msgid "Fuel unit"
-msgstr ""
+msgstr "Unidades de combustible"
 
 #: simforms/models.py:122
 msgid "Fuels units"
-msgstr ""
+msgstr "Unidades de combustibles"
 
 #: simforms/models.py:129
 msgid "City"
-msgstr ""
+msgstr "Ciudad"
 
 #: simforms/models.py:131
 msgid "Latitude"
-msgstr ""
+msgstr "Latitud"
 
 #: simforms/models.py:132
 msgid "Longitude"
-msgstr ""
+msgstr "Longitud"
 
 #: simforms/templates/async/async_sim_fu.html:2
 #: simforms/templates/simulation_form.html:106
 msgid "Fuel price per unit"
-msgstr ""
+msgstr "Precio de combustible por unidad"
 
 #: simforms/templates/async/table_fuelunits.html:7
 #: simforms/templates/new_fuel.html:102
 msgid "Units"
-msgstr ""
+msgstr "Unidades"
 
 #: simforms/templates/async/table_fuelunits.html:8
 #: simforms/templates/new_fuel.html:103
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 #: simforms/templates/new_fuel.html:30 templates/base.html:41
 msgid "Add"
-msgstr ""
+msgstr "Agregar"
 
 #: simforms/templates/new_fuel.html:119
 msgid "Update"
-msgstr ""
+msgstr "Actualizar"
 
 #: simforms/templates/new_fuel.html:119
 msgid "Create"
-msgstr ""
+msgstr "Crear"
 
 #: simforms/templates/new_location.html:14
 #: simforms/templates/new_location.html:25
 #: simforms/templates/new_location.html:36
 #: simforms/templates/new_location.html:47
 msgid "Looks good!"
-msgstr ""
+msgstr "¡Se ve bien!"
 
 #: simforms/templates/new_location.html:17
 msgid "Please provide a valid country."
-msgstr ""
+msgstr "Por favor, agrega un país válido"
 
 #: simforms/templates/new_location.html:28
 msgid "Please provide a valid city."
-msgstr ""
+msgstr "Por favor, agrega una ciudad válida"
 
 #: simforms/templates/new_location.html:39
 msgid "Please provide a valid latitude."
-msgstr ""
+msgstr "Por favor, agrega una latitud válida"
 
 #: simforms/templates/new_location.html:50
 msgid "Please provide a valid longitude."
-msgstr ""
+msgstr "Por favor, agrega una longitud válida"
 
 #: simforms/templates/new_location.html:57
 msgid "The file contains headers"
-msgstr ""
+msgstr "El archivo contiene encabezados"
 
 #: simforms/templates/new_location.html:77
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 #: simforms/templates/simulation_form.html:10
 msgid "Simulation information"
-msgstr ""
+msgstr "Información de simulación"
 
 #: simforms/templates/simulation_form.html:42
 msgid "Location information"
-msgstr ""
+msgstr "Información de ubicación"
 
 #: simforms/templates/simulation_form.html:85
 msgid "Financial information"
-msgstr ""
+msgstr "Información financiera"
 
 #: simforms/templates/simulation_form.html:132
 msgid "Process information"
-msgstr ""
+msgstr "Información de proceso"
 
 #: simforms/templates/simulation_form.html:160
 msgid "Consumption profile"
-msgstr ""
+msgstr "Perfil de consumo"
 
 #: simforms/templates/simulation_form.html:417
 msgid "Available soon..."
-msgstr ""
+msgstr "Disponible pronto..."
 
 #: simforms/templates/simulation_form.html:440 templates/base.html:33
 msgid "Simulate"
-msgstr ""
+msgstr "Simular"
 
 #: simforms/views.py:49
 msgid "Resultados de la <br> simulación"
-msgstr ""
+msgstr "Resultados de la <br> simulación"
 
 #: templates/base.html:8
 msgid "SHIPcal simulation"
-msgstr ""
+msgstr "Simulación de SHIPcal"
 
 #: templates/base.html:45
 msgid "New location"
-msgstr ""
+msgstr "Nueva ubicación"
 
 #: templates/base.html:48
 msgid "New collector"
-msgstr ""
+msgstr "Nuevo colector"
 
 #: templates/base.html:50
 msgid "New fuel"
-msgstr ""
+msgstr "Nuevo combustible"
 
 #: templates/base.html:65
 msgid "Wanna help?"
-msgstr ""
+msgstr "¿Quieres ayudar?"
 
 #: templates/base.html:65
 msgid "Send a pull request!"
-msgstr ""
+msgstr "Envía una solicitud de pull"
 
 #: templates/base.html:65
 msgid "Supported by SOLATOM "
-msgstr ""
+msgstr "Respaldado por SOLATOM"

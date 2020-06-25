@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'demo_SHIPcal.urls'
@@ -112,6 +113,8 @@ LANGUAGES = [
   ('es', _('Spanish')),
   ('en', _('English')),
 ]
+
+LOCALE_PATHS = ( os.path.join(BASE_DIR, 'locale'), )
 
 LANGUAGE_CODE = 'en-us'
 

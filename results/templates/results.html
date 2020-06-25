@@ -5,7 +5,7 @@
 {% block title %} {% trans "My simulations" %} {% endblock %}
 
 {% block content %}
-
+{% language 'es' %}
 <h1>{% trans "Simulations results" %}</h1>
 
 <div class="table-responsive-md">
@@ -13,7 +13,7 @@
         <thead>
             <tr>
             <th scope="col">{% trans "id" %}</th>
-            <th scope="col">{% trans "Simultion" %}</th>
+            <th scope="col">{% trans "Simulation" %}</th>
             <th scope="col">{% trans "Date" %}</th>
             <th scope="col">{% trans "Actions" %}</th>
             </tr>
@@ -32,5 +32,5 @@
         </tbody>
     </table>
 </div>
-
+{% endlanguage %}
 {% endblock %}
