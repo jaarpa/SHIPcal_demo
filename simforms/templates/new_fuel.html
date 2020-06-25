@@ -17,18 +17,6 @@
     </div>
     <br>
     <div class="form-row">
-        <div class="col-md-5">
-            {{form_f.co2factor}}
-        </div>
-        <div class="col-md-2 my-auto text-center">
-            {{form_f.co2factor.label_tag}}
-        </div>
-        <div class="col-md-5" id="id_co2units">
-            {{f2.co2units}}
-        </div>
-    </div>
-    <br>
-    <div class="form-row">
         <div class="col-md-5 my-auto">
             {{form_fu.conversion_factor.label_tag}}
             {{form_fu.conversion_factor}}
@@ -39,13 +27,24 @@
         </div>
         <div class="col-md-5 my-auto">
             <br>
-            <button type="button" class="btn btn-primary btn-block" onclick="agregar()">{% trans "Agregar" %}</button>
+            <button type="button" class="btn btn-primary btn-block" onclick="agregar()">{% trans "Add" %}</button>
         </div>
 
         {{form_fu.units_js.as_hidden}}
 
     </div>
-
+    <br>
+    <div class="form-row">
+        <div class="col-md-5">
+            {{form_f.co2factor}}
+        </div>
+        <div class="col-md-2 my-auto text-center">
+            {{form_f.co2factor.label_tag}}
+        </div>
+        <div class="col-md-5" id="id_co2units">
+            {{f2.co2units}}
+        </div>
+    </div>
     <script>
         var conv_factors={"kWh":1}
         function agregar(){

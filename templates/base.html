@@ -30,11 +30,11 @@
                 <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             {% url 'simulate' as linkto_simulate %}
-                            <a class="nav-link" href="{{linkto_simulate}}">Simular{% if request.path == linkto_simulate %}<span class="sr-only">(current)</span>{% endif %}</a>
+                            <a class="nav-link" href="{{linkto_simulate}}">{% trans "Simulate" %}{% if request.path == linkto_simulate %}<span class="sr-only">(current)</span>{% endif %}</a>
                         </li>
                         <li class="nav-item">
                             {% url 'results' as linkto_results %}
-                            <a class="nav-link" href="{{linkto_results}}">Resultados{% if request.path == linkto_results %}<span class="sr-only">(current)</span>{% endif %}</a>
+                            <a class="nav-link" href="{{linkto_results}}">{% trans "Results" %}{% if request.path == linkto_results %}<span class="sr-only">(current)</span>{% endif %}</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
