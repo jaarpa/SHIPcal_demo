@@ -123,7 +123,7 @@ def load_city(request):
             bulk_meteo_data=[]
             for hour_data in meteo_file:
                 bulk_meteo_data += [
-                    MeteoData(location=new_location, month_sim=hour_data[0], day_sim=hour_data[1], hour_sim=hour_data[2], hour_year_sim=hour_data[3], DNI=hour_data[5], GHI=hour_data[6], temp=hour_data[7])
+                    MeteoData(location=new_location, month_sim=hour_data[0], day_sim=hour_data[1], hour_sim=hour_data[2], hour_year_sim=hour_data[3], GHI=hour_data[4], DNI=hour_data[8], temp=hour_data[9])
                     ]
             MeteoData.objects.bulk_create(bulk_meteo_data)
             #meteo_data.order_by('hour_year_sim').values_list('DNI',flat=True)
