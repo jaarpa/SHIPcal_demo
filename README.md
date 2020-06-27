@@ -38,7 +38,7 @@ and type `localhost:8000` in your preferred web browser.
 
 #### Otherwise
 
-If you are using a different enviroment manager different to conda or no enviroment manager at all you can similarly run in the virtual enviroment (if you have any) in your terminal
+If you are using an enviroment manager different to conda or no enviroment manager at all you can similarly run in the virtual enviroment (if you have any) in your terminal
 ```
 pip3 install -r requirements.txt
 ```
@@ -57,8 +57,9 @@ There are a few things that are region/user dependent in the simulations (e.g. t
 
 Go to the navigation menu, under Add>New location to open the new location form.
 
-Yo must fill out the form with the correct data and upload a typical meteorological year (TMY) file of the location in order to get an accurate simulation. `SHIPcal_demo` already has a TMY example that you can use to feed the database, this file is located in `SHIPcal_demo/Celaya.dat` . You can add it as follows:
+Yo must fill out the form with the correct data and upload a typical meteorological year (TMY) file of the location in order to get an accurate simulation. `SHIPcal_demo` already has a TMY example that you can use to feed the database, this file is located in `SHIPcal_demo/Tijuana.dat`. 
 
+The `Tijuana.dat` file is the standard output of a TMY from Meteonorm **using solar time**. Select the country of the city (i.e. Mexico) the name of the city (i.e. Tijuana), its location (i.e. Lat = 32.5422951, Longitude=-116.9706862). Mark the checkbox if the file contains a line of headers, do not check it if doesn't contain headers at all, `Tijuana.dat` does not contain headers. Upload the file `SHIPcal_demo/Tijuana.dat`. 
 Finally click the save button and the location will be loaded to the database (it might take a couple of seconds).
 
 ### Add a new fuel
@@ -86,5 +87,5 @@ Go to Simulate in the navigation menu and fill up the form with the data for the
 - [ ] Update/Delete fuels view
 - [ ] Update/Delete locations view
 - [ ] Update/Delete simulation view
-- [ ] Results view to get previous simulation results.
+- [x] Results view to get previous simulation results.
 - [ ] PDF generation report
