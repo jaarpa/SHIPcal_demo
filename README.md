@@ -13,9 +13,7 @@ git clone https://github.com/jaarpa/SHIPcal_demo.git
 ```
 The previous command will create a folder called `SHIPcal_demo` move inside of it and clone the `SHIPcal` repository
 ```
-cd SHIPcal_demo
 git clone https://github.com/mfrasquet/SHIPcal SHIPcal_demo/SHIPcal
-cd ..
 ```
 now you have a full copy of the project in your local machine.
 
