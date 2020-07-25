@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from simforms.views import new_simulation, load_city, new_fuel, update_fuel
+from simforms.views import new_simulation, load_city, new_fuel, update_fuel, ver_ciudades_disponibles
 from simforms.views import async_locations, async_fueltab, async_co2factorunit, async_sim_fu, async_integrations
 from results.views import all_results, result, result_instalation, result_production, result_finance
 
 urlpatterns = [
+    path('ver/ciudades_disponibles/', ver_ciudades_disponibles),
+
+
     path('admin/', admin.site.urls),
     path('', new_simulation, name="simulate"),
     path('new_location/', load_city, name='new_location'),

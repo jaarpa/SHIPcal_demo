@@ -19,7 +19,20 @@ import os
 sys.path.append(os.path.join(settings.BASE_DIR, 'SHIPcal'))
 from SHIPcal.sliced_SHIPcal import SHIPcal #noqa
 
+from django.db.models import Sum
+
 # Create your views here.
+def ver_ciudades_disponibles(request):
+    todas_las_ciudades  = Locations.objects.all()
+
+    total_DNI = []
+    for city in todas_las_ciudades:
+        total_DNI += [MeteoData.objects.filter(location=city).aggregate(Sum('DNI'))]
+
+    table_info = zip(todas_las_ciudades, total_DNI)
+
+    return render(request, 'ciudades_disponibles.html', {'ciudades':table_info})
+
 
 def new_simulation(request):
     if request.method =='POST':
